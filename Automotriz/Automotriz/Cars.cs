@@ -72,7 +72,8 @@ namespace Automotriz
             switch (menuText)
             {
                 case "Enviar al taller":
-                    MessageBox.Show("Enviado al taller");
+                    Workshop_status new_form = new Workshop_status();
+                    new_form.ShowDialog();
                     break;
                 default:
                     break;

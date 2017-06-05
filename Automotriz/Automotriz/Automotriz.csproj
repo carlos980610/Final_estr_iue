@@ -96,6 +96,12 @@
     <Compile Include="SingUp_client.Designer.cs">
       <DependentUpon>SingUp_client.cs</DependentUpon>
     </Compile>
+    <Compile Include="Workshop_status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workshop_status.Designer.cs">
+      <DependentUpon>Workshop_status.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Cars.resx">
       <DependentUpon>Cars.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SingUp_client.resx">
       <DependentUpon>SingUp_client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workshop_status.resx">
+      <DependentUpon>Workshop_status.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
