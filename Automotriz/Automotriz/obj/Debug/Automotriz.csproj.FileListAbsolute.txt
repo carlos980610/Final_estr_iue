@@ -1,0 +1,23 @@
+C:\Users\CarlosAndrés\Documents\GitHub\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.csprojResolveAssemblyReference.cache
+C:\Users\CarlosAndrés\Documents\GitHub\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Car_life_sheet.resources
+C:\Users\CarlosAndrés\Documents\GitHub\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Login.resources
+C:\Users\CarlosAndrés\Documents\GitHub\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Menu_client.resources
+C:\Users\CarlosAndrés\Documents\GitHub\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Menu_user.resources
+C:\Users\CarlosAndrés\Documents\GitHub\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Properties.Resources.resources
+C:\Users\CarlosAndrés\Documents\GitHub\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.SingUp_car.resources
+C:\Users\CarlosAndrés\Documents\GitHub\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.SingUp_client.resources
+C:\Users\CarlosAndrés\Documents\GitHub\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.csproj.GenerateResource.Cache
+C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.csprojResolveAssemblyReference.cache
+C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Car_life_sheet.resources
+C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Login.resources
+C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Menu_client.resources
+C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Menu_user.resources
+C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Properties.Resources.resources
+C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.SingUp_car.resources
+C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.SingUp_client.resources
+C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.csproj.GenerateResource.Cache
+C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_iue\Automotriz\Automotriz\bin\Debug\Automotriz.exe.config
+C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_iue\Automotriz\Automotriz\bin\Debug\Automotriz.exe
+C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_iue\Automotriz\Automotriz\bin\Debug\Automotriz.pdb
+C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.exe
+C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_iue\Automotriz\Automotriz\obj\Debug\Automotriz.pdb

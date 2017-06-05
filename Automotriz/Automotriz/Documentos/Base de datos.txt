@@ -1,0 +1,57 @@
+tblUser
+id_user = int (autoincrement)	pk
+User = varchar(50)
+Password = varchar(50)
+-----------------------------
+-----------------------------Lista
+
+tblCar
+id_car = varchar(50)		pk
+car_mark = varchar(50)
+car_model = varchar(50)  	//validacion numerica
+car_cylinder = varchar(50) 	//validacion numerica
+car_kilometer = numeric(18,0)
+car_carriage_plate = varchar(50)
+		
+-----------------------------
+-----------------------------
+
+
+
+
+tblClient
+id_client = varchar(50)		pk
+client_name = varchar(50)
+client_phone = varchar(50)	//validacion numerica
+client_user = varchar(50)
+client_password = varchar(50)
+------------------------------
+------------------------------
+
+
+
+
+tblClient_cars
+id_car = varchar(50)		pk
+id_client = varchar(50)
+-------------------------------
+
+tblCars_move_maintenance
+id_maintenance = varchar(50)		pk
+id_car = varchar(50)
+id_datatime = varchar(50)
+-------------------------------
+
+tblCars_move_repairs
+id_repair = varchar(50)		pk
+id_car = varchar(50)
+
+-------------------------------
+
+tblSpare_parts
+-------------------------------
+
+
+tblCar_process
+id_process = varchar(50)	pk
+-------------------------------
