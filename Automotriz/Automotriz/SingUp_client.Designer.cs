@@ -28,200 +28,178 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnsalir = new System.Windows.Forms.Button();
-            this.btnCl_registrar = new System.Windows.Forms.Button();
-            this.txtCl_Documento = new System.Windows.Forms.TextBox();
-            this.txtCl_telefono = new System.Windows.Forms.TextBox();
-            this.txtCl_nombre = new System.Windows.Forms.TextBox();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnAdd_Client = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtId_Card = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Carro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Placa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtUser = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnCl_Agregar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnCancel_Operation = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnsalir
+            // btnAdd_Client
             // 
-            this.btnsalir.Location = new System.Drawing.Point(313, 262);
-            this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Size = new System.Drawing.Size(75, 23);
-            this.btnsalir.TabIndex = 31;
-            this.btnsalir.Text = "Salir";
-            this.btnsalir.UseVisualStyleBackColor = true;
-            // 
-            // btnCl_registrar
-            // 
-            this.btnCl_registrar.Location = new System.Drawing.Point(222, 262);
-            this.btnCl_registrar.Name = "btnCl_registrar";
-            this.btnCl_registrar.Size = new System.Drawing.Size(75, 23);
-            this.btnCl_registrar.TabIndex = 30;
-            this.btnCl_registrar.Text = "Registrar";
-            this.btnCl_registrar.UseVisualStyleBackColor = true;
-            // 
-            // txtCl_Documento
-            // 
-            this.txtCl_Documento.Location = new System.Drawing.Point(209, 109);
-            this.txtCl_Documento.Name = "txtCl_Documento";
-            this.txtCl_Documento.Size = new System.Drawing.Size(120, 20);
-            this.txtCl_Documento.TabIndex = 24;
-            // 
-            // txtCl_telefono
-            // 
-            this.txtCl_telefono.Location = new System.Drawing.Point(209, 73);
-            this.txtCl_telefono.Name = "txtCl_telefono";
-            this.txtCl_telefono.Size = new System.Drawing.Size(100, 20);
-            this.txtCl_telefono.TabIndex = 23;
-            // 
-            // txtCl_nombre
-            // 
-            this.txtCl_nombre.Location = new System.Drawing.Point(209, 42);
-            this.txtCl_nombre.Name = "txtCl_nombre";
-            this.txtCl_nombre.Size = new System.Drawing.Size(178, 20);
-            this.txtCl_nombre.TabIndex = 22;
-            // 
-            // txtId
-            // 
-            this.txtId.Location = new System.Drawing.Point(209, 16);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(100, 20);
-            this.txtId.TabIndex = 21;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(142, 112);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 13);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Documento I.";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(141, 80);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 13);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Telefono";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(142, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Nombre";
+            this.btnAdd_Client.Location = new System.Drawing.Point(206, 89);
+            this.btnAdd_Client.Name = "btnAdd_Client";
+            this.btnAdd_Client.Size = new System.Drawing.Size(162, 23);
+            this.btnAdd_Client.TabIndex = 30;
+            this.btnAdd_Client.Text = "Registrar";
+            this.btnAdd_Client.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(142, 23);
+            this.label1.Location = new System.Drawing.Point(14, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 13);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Id ";
+            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "Nombre";
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(72, 34);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(100, 20);
+            this.txtName.TabIndex = 33;
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.Location = new System.Drawing.Point(72, 86);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(100, 20);
+            this.txtPhone.TabIndex = 35;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(14, 89);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "Teléfono";
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Location = new System.Drawing.Point(72, 112);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(100, 20);
+            this.txtAddress.TabIndex = 37;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(14, 115);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 13);
+            this.label3.TabIndex = 36;
+            this.label3.Text = "Dirección";
+            // 
+            // txtId_Card
+            // 
+            this.txtId_Card.Location = new System.Drawing.Point(72, 60);
+            this.txtId_Card.Name = "txtId_Card";
+            this.txtId_Card.Size = new System.Drawing.Size(100, 20);
+            this.txtId_Card.TabIndex = 39;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(14, 63);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 13);
+            this.label4.TabIndex = 38;
+            this.label4.Text = "Cédula";
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(268, 56);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(100, 20);
+            this.txtPassword.TabIndex = 43;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 23);
+            this.label5.Location = new System.Drawing.Point(203, 60);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 13);
-            this.label5.TabIndex = 32;
-            this.label5.Text = "Imagen";
+            this.label5.Size = new System.Drawing.Size(61, 13);
+            this.label5.TabIndex = 42;
+            this.label5.Text = "Contraseña";
             // 
-            // dataGridView1
+            // txtUser
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Carro,
-            this.Placa});
-            this.dataGridView1.Location = new System.Drawing.Point(145, 178);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(244, 63);
-            this.dataGridView1.TabIndex = 33;
-            // 
-            // Carro
-            // 
-            this.Carro.HeaderText = "Carro";
-            this.Carro.Name = "Carro";
-            // 
-            // Placa
-            // 
-            this.Placa.HeaderText = "Placa";
-            this.Placa.Name = "Placa";
+            this.txtUser.Location = new System.Drawing.Point(268, 30);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(100, 20);
+            this.txtUser.TabIndex = 41;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(219, 152);
+            this.label6.Location = new System.Drawing.Point(203, 34);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 13);
-            this.label6.TabIndex = 34;
-            this.label6.Text = "Carros que posee";
+            this.label6.Size = new System.Drawing.Size(43, 13);
+            this.label6.TabIndex = 40;
+            this.label6.Text = "Usuario";
             // 
-            // btnCl_Agregar
+            // btnCancel_Operation
             // 
-            this.btnCl_Agregar.Location = new System.Drawing.Point(315, 147);
-            this.btnCl_Agregar.Name = "btnCl_Agregar";
-            this.btnCl_Agregar.Size = new System.Drawing.Size(75, 23);
-            this.btnCl_Agregar.TabIndex = 35;
-            this.btnCl_Agregar.Text = "Agregar";
-            this.btnCl_Agregar.UseVisualStyleBackColor = true;
+            this.btnCancel_Operation.Location = new System.Drawing.Point(290, 171);
+            this.btnCancel_Operation.Name = "btnCancel_Operation";
+            this.btnCancel_Operation.Size = new System.Drawing.Size(79, 23);
+            this.btnCancel_Operation.TabIndex = 44;
+            this.btnCancel_Operation.Text = "Cancelar";
+            this.btnCancel_Operation.UseVisualStyleBackColor = true;
+            this.btnCancel_Operation.Click += new System.EventHandler(this.btnCancel_Operation_Click);
             // 
             // SingUp_client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(399, 297);
-            this.Controls.Add(this.btnCl_Agregar);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(381, 206);
+            this.Controls.Add(this.btnCancel_Operation);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.btnsalir);
-            this.Controls.Add(this.btnCl_registrar);
-            this.Controls.Add(this.txtCl_Documento);
-            this.Controls.Add(this.txtCl_telefono);
-            this.Controls.Add(this.txtCl_nombre);
-            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.txtUser);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtId_Card);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnAdd_Client);
             this.Name = "SingUp_client";
             this.Text = "SingUp_client";
             this.Load += new System.EventHandler(this.SingUp_client_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnsalir;
-        private System.Windows.Forms.Button btnCl_registrar;
-        private System.Windows.Forms.TextBox txtCl_Documento;
-        private System.Windows.Forms.TextBox txtCl_telefono;
-        private System.Windows.Forms.TextBox txtCl_nombre;
-        private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnAdd_Client;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtId_Card;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Carro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Placa;
+        private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnCl_Agregar;
+        private System.Windows.Forms.Button btnCancel_Operation;
     }
 }

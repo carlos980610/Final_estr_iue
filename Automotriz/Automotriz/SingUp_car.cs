@@ -16,5 +16,12 @@ namespace Automotriz
         {
             InitializeComponent();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Menu_user new_form = new Menu_user();
+            new_form.Show();
+            Close();
+        }
     }
 }

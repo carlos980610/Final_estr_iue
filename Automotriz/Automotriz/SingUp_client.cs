@@ -21,5 +21,12 @@ namespace Automotriz
         {
 
         }
+
+        private void btnCancel_Operation_Click(object sender, EventArgs e)
+        {
+            SingUp_car new_form = new SingUp_car();
+            new_form.Show();
+            Close();
+        }
     }
 }
