@@ -199,6 +199,7 @@
             this.btnNew_Client.TabIndex = 17;
             this.btnNew_Client.Text = "Crear nuevo cliente";
             this.btnNew_Client.UseVisualStyleBackColor = true;
+            this.btnNew_Client.Click += new System.EventHandler(this.btnNew_Client_Click);
             // 
             // txtId_Client
             // 

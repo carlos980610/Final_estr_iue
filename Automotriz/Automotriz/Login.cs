@@ -22,7 +22,8 @@ namespace Automotriz
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
+            Application.Exit();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

@@ -23,5 +23,12 @@ namespace Automotriz
             new_form.Show();
             Close();
         }
+
+        private void btnNew_Client_Click(object sender, EventArgs e)
+        {
+            SingUp_client new_form = new SingUp_client();
+            new_form.ShowDialog();
+            
+        }
     }
 }
