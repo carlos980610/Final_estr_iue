@@ -96,8 +96,14 @@
     <Compile Include="SingUp_client.Designer.cs">
       <DependentUpon>SingUp_client.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Cars.resx">
+      <DependentUpon>Cars.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Car_life_sheet.resx">
       <DependentUpon>Car_life_sheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients.resx">
+      <DependentUpon>Clients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

@@ -45,7 +45,7 @@ namespace Automotriz
                 if (result && user_type.Equals("Taller"))
                 {
                     id = DataBaseConnection.Credentials_in_menu(user, password, user_type);
-                    Menu_user new_form = new Menu_user(id, user);
+                    Menu_user new_form = new Menu_user();
                     new_form.Show();
                     this.Hide();
                 }

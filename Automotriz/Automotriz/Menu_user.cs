@@ -12,11 +12,9 @@ namespace Automotriz
 {
     public partial class Menu_user : Form
     {
-        public Menu_user(string id, string user)
+        public Menu_user()
         {
             InitializeComponent();
-            lblId_user.Text = id;
-            lblUser_name.Text = user;
         }
 
 

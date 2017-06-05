@@ -36,10 +36,6 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnRegister_Car = new System.Windows.Forms.Button();
             this.btnSeeGarage = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblId_user = new System.Windows.Forms.Label();
-            this.lblUser_name = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -117,51 +113,11 @@
             this.btnSeeGarage.Text = "Ver Taller";
             this.btnSeeGarage.UseVisualStyleBackColor = true;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(19, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Id:";
-            // 
-            // lblId_user
-            // 
-            this.lblId_user.AutoSize = true;
-            this.lblId_user.Location = new System.Drawing.Point(65, 9);
-            this.lblId_user.Name = "lblId_user";
-            this.lblId_user.Size = new System.Drawing.Size(28, 13);
-            this.lblId_user.TabIndex = 9;
-            this.lblId_user.Text = "XXX";
-            // 
-            // lblUser_name
-            // 
-            this.lblUser_name.AutoSize = true;
-            this.lblUser_name.Location = new System.Drawing.Point(65, 22);
-            this.lblUser_name.Name = "lblUser_name";
-            this.lblUser_name.Size = new System.Drawing.Size(28, 13);
-            this.lblUser_name.TabIndex = 11;
-            this.lblUser_name.Text = "XXX";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Nombre:";
-            // 
             // Menu_user
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(370, 261);
-            this.Controls.Add(this.lblUser_name);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.lblId_user);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSeeGarage);
             this.Controls.Add(this.btnRegister_Car);
             this.Controls.Add(this.btnExit);
@@ -187,9 +143,5 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnRegister_Car;
         private System.Windows.Forms.Button btnSeeGarage;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblId_user;
-        private System.Windows.Forms.Label lblUser_name;
-        private System.Windows.Forms.Label label4;
     }
 }
