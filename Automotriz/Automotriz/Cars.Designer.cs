@@ -48,8 +48,10 @@
             this.dgvCars.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCars.Location = new System.Drawing.Point(12, 44);
             this.dgvCars.Name = "dgvCars";
+            this.dgvCars.ReadOnly = true;
             this.dgvCars.Size = new System.Drawing.Size(649, 258);
             this.dgvCars.TabIndex = 1;
+            this.dgvCars.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvCars_RowHeaderMouseClick);
             // 
             // Cars
             // 

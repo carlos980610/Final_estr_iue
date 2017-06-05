@@ -53,6 +53,7 @@
             this.btnAdd_Client.TabIndex = 30;
             this.btnAdd_Client.Text = "Registrar";
             this.btnAdd_Client.UseVisualStyleBackColor = true;
+            this.btnAdd_Client.Click += new System.EventHandler(this.btnAdd_Client_Click);
             // 
             // label1
             // 
