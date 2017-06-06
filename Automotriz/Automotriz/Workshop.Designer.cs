@@ -36,14 +36,21 @@
             this.txtCar_Plate = new System.Windows.Forms.TextBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnAdd_to_Workshop = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvCars_in_repair = new System.Windows.Forms.DataGridView();
+            this.dgvCars_in_mantenance = new System.Windows.Forms.DataGridView();
             this.cmbService_Type = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblCar_Mark = new System.Windows.Forms.Label();
+            this.lblCar_Model = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.lblCar_Owner = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCars_in_repair)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCars_in_mantenance)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -68,7 +75,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(555, 52);
+            this.label3.Location = new System.Drawing.Point(542, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(140, 13);
             this.label3.TabIndex = 2;
@@ -101,7 +108,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(917, 360);
+            this.btnExit.Location = new System.Drawing.Point(904, 360);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(124, 23);
             this.btnExit.TabIndex = 6;
@@ -111,28 +118,28 @@
             // 
             // btnAdd_to_Workshop
             // 
-            this.btnAdd_to_Workshop.Location = new System.Drawing.Point(261, 289);
+            this.btnAdd_to_Workshop.Location = new System.Drawing.Point(352, 289);
             this.btnAdd_to_Workshop.Name = "btnAdd_to_Workshop";
             this.btnAdd_to_Workshop.Size = new System.Drawing.Size(75, 23);
             this.btnAdd_to_Workshop.TabIndex = 9;
             this.btnAdd_to_Workshop.Text = "Añadir";
             this.btnAdd_to_Workshop.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgvCars_in_repair
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 78);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(488, 150);
-            this.dataGridView1.TabIndex = 10;
+            this.dgvCars_in_repair.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCars_in_repair.Location = new System.Drawing.Point(12, 78);
+            this.dgvCars_in_repair.Name = "dgvCars_in_repair";
+            this.dgvCars_in_repair.Size = new System.Drawing.Size(488, 150);
+            this.dgvCars_in_repair.TabIndex = 10;
             // 
-            // dataGridView2
+            // dgvCars_in_mantenance
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(553, 78);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(488, 150);
-            this.dataGridView2.TabIndex = 11;
+            this.dgvCars_in_mantenance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCars_in_mantenance.Location = new System.Drawing.Point(540, 78);
+            this.dgvCars_in_mantenance.Name = "dgvCars_in_mantenance";
+            this.dgvCars_in_mantenance.Size = new System.Drawing.Size(488, 150);
+            this.dgvCars_in_mantenance.TabIndex = 11;
             // 
             // cmbService_Type
             // 
@@ -141,7 +148,7 @@
             this.cmbService_Type.Items.AddRange(new object[] {
             "Mantenimiento",
             "Reparacion"});
-            this.cmbService_Type.Location = new System.Drawing.Point(134, 291);
+            this.cmbService_Type.Location = new System.Drawing.Point(225, 291);
             this.cmbService_Type.Name = "cmbService_Type";
             this.cmbService_Type.Size = new System.Drawing.Size(121, 21);
             this.cmbService_Type.TabIndex = 12;
@@ -168,23 +175,94 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(131, 275);
+            this.label7.Location = new System.Drawing.Point(222, 275);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 13);
             this.label7.TabIndex = 15;
             this.label7.Text = "Servicio";
             // 
+            // btnSearch
+            // 
+            this.btnSearch.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.btnSearch.Location = new System.Drawing.Point(134, 289);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 16;
+            this.btnSearch.Text = "Buscar";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(26, 325);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(37, 13);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Marca";
+            // 
+            // lblCar_Mark
+            // 
+            this.lblCar_Mark.AutoSize = true;
+            this.lblCar_Mark.Location = new System.Drawing.Point(86, 325);
+            this.lblCar_Mark.Name = "lblCar_Mark";
+            this.lblCar_Mark.Size = new System.Drawing.Size(28, 13);
+            this.lblCar_Mark.TabIndex = 18;
+            this.lblCar_Mark.Text = "XXX";
+            // 
+            // lblCar_Model
+            // 
+            this.lblCar_Model.AutoSize = true;
+            this.lblCar_Model.Location = new System.Drawing.Point(86, 348);
+            this.lblCar_Model.Name = "lblCar_Model";
+            this.lblCar_Model.Size = new System.Drawing.Size(28, 13);
+            this.lblCar_Model.TabIndex = 20;
+            this.lblCar_Model.Text = "XXX";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(26, 348);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(42, 13);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "Modelo";
+            // 
+            // lblCar_Owner
+            // 
+            this.lblCar_Owner.AutoSize = true;
+            this.lblCar_Owner.Location = new System.Drawing.Point(239, 325);
+            this.lblCar_Owner.Name = "lblCar_Owner";
+            this.lblCar_Owner.Size = new System.Drawing.Size(28, 13);
+            this.lblCar_Owner.TabIndex = 22;
+            this.lblCar_Owner.Text = "XXX";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(179, 325);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(57, 13);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "Propietario";
+            // 
             // Workshop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1053, 395);
+            this.ClientSize = new System.Drawing.Size(1047, 395);
+            this.Controls.Add(this.lblCar_Owner);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.lblCar_Model);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.lblCar_Mark);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cmbService_Type);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvCars_in_mantenance);
+            this.Controls.Add(this.dgvCars_in_repair);
             this.Controls.Add(this.btnAdd_to_Workshop);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.txtCar_Plate);
@@ -195,8 +273,9 @@
             this.Controls.Add(this.label1);
             this.Name = "Workshop";
             this.Text = "Workshop";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.Load += new System.EventHandler(this.Workshop_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCars_in_repair)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCars_in_mantenance)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,11 +291,18 @@
         private System.Windows.Forms.TextBox txtCar_Plate;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnAdd_to_Workshop;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvCars_in_repair;
+        private System.Windows.Forms.DataGridView dgvCars_in_mantenance;
         private System.Windows.Forms.ComboBox cmbService_Type;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblCar_Mark;
+        private System.Windows.Forms.Label lblCar_Model;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblCar_Owner;
+        private System.Windows.Forms.Label label12;
     }
 }
