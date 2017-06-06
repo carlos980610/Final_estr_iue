@@ -48,14 +48,15 @@ namespace Automotriz
                     id = DataBaseConnection.Credentials_in_menu(user, password, user_type);
                     Menu_user new_form = new Menu_user();
                     new_form.Show();
-                    this.Hide();
+                    Hide();
                 }
                 else if (result && user_type.Equals("Cliente"))
                 {
                     id = DataBaseConnection.Credentials_in_menu(user, password, user_type);
+                    getId();
                     Menu_client new_form = new Menu_client();
                     new_form.Show();
-                    this.Hide();
+                    Hide();
                 }
                 else
                 {
@@ -69,6 +70,11 @@ namespace Automotriz
         private void txtUser_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        public static string getId()
+        {
+            string id = Login.txtUser.Text;
+            return id;
         }
     }
 }
