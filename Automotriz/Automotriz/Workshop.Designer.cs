@@ -37,7 +37,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnAdd_to_Workshop = new System.Windows.Forms.Button();
             this.dgvCars_in_repair = new System.Windows.Forms.DataGridView();
-            this.dgvCars_in_mantenance = new System.Windows.Forms.DataGridView();
+            this.dgvCars_in_maintenance = new System.Windows.Forms.DataGridView();
             this.cmbService_Type = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,7 +50,7 @@
             this.lblCar_Owner = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCars_in_repair)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCars_in_mantenance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCars_in_maintenance)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -133,13 +133,13 @@
             this.dgvCars_in_repair.Size = new System.Drawing.Size(488, 150);
             this.dgvCars_in_repair.TabIndex = 10;
             // 
-            // dgvCars_in_mantenance
+            // dgvCars_in_maintenance
             // 
-            this.dgvCars_in_mantenance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCars_in_mantenance.Location = new System.Drawing.Point(540, 78);
-            this.dgvCars_in_mantenance.Name = "dgvCars_in_mantenance";
-            this.dgvCars_in_mantenance.Size = new System.Drawing.Size(488, 150);
-            this.dgvCars_in_mantenance.TabIndex = 11;
+            this.dgvCars_in_maintenance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCars_in_maintenance.Location = new System.Drawing.Point(540, 78);
+            this.dgvCars_in_maintenance.Name = "dgvCars_in_maintenance";
+            this.dgvCars_in_maintenance.Size = new System.Drawing.Size(488, 150);
+            this.dgvCars_in_maintenance.TabIndex = 11;
             // 
             // cmbService_Type
             // 
@@ -190,6 +190,7 @@
             this.btnSearch.TabIndex = 16;
             this.btnSearch.Text = "Buscar";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // label8
             // 
@@ -261,7 +262,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cmbService_Type);
-            this.Controls.Add(this.dgvCars_in_mantenance);
+            this.Controls.Add(this.dgvCars_in_maintenance);
             this.Controls.Add(this.dgvCars_in_repair);
             this.Controls.Add(this.btnAdd_to_Workshop);
             this.Controls.Add(this.btnExit);
@@ -275,7 +276,7 @@
             this.Text = "Workshop";
             this.Load += new System.EventHandler(this.Workshop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCars_in_repair)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCars_in_mantenance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCars_in_maintenance)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,7 +293,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnAdd_to_Workshop;
         private System.Windows.Forms.DataGridView dgvCars_in_repair;
-        private System.Windows.Forms.DataGridView dgvCars_in_mantenance;
+        private System.Windows.Forms.DataGridView dgvCars_in_maintenance;
         private System.Windows.Forms.ComboBox cmbService_Type;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
