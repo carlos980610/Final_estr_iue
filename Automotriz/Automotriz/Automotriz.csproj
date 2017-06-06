@@ -96,6 +96,12 @@
     <Compile Include="SingUp_client.Designer.cs">
       <DependentUpon>SingUp_client.cs</DependentUpon>
     </Compile>
+    <Compile Include="Workshop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workshop.Designer.cs">
+      <DependentUpon>Workshop.cs</DependentUpon>
+    </Compile>
     <Compile Include="Workshop_status.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SingUp_client.resx">
       <DependentUpon>SingUp_client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workshop.resx">
+      <DependentUpon>Workshop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Workshop_status.resx">
       <DependentUpon>Workshop_status.cs</DependentUpon>

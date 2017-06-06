@@ -61,5 +61,11 @@ namespace Automotriz
             Close();
             Application.Exit();
         }
+
+        private void btnSeeGarage_Click(object sender, EventArgs e)
+        {
+            Workshop new_form = new Workshop();
+            new_form.ShowDialog();
+        }
     }
 }

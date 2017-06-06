@@ -37,3 +37,5 @@ C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_i
 C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_iue\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.pdb
 C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_iue\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Cars.resources
 C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_iue\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Clients.resources
+C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_iue\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Workshop_status.resources
+C:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estructuras_iue\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Workshop.resources
