@@ -12,12 +12,14 @@ namespace Automotriz
 {
     public partial class Login : Form
     {
+        
         public Login()
         {
             InitializeComponent();
-            cmbUserType.Text = "Taller";
-            txtUser.Text = "Manuela";
-            txtPassword.Text = "2";
+            cmbUserType.Text = "Cliente";
+            txtUser.Text = "Andres";
+            txtPassword.Text = "1";
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -28,7 +30,7 @@ namespace Automotriz
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string user = "", password, user_type = cmbUserType.Text, id = ""; //Variables de login
+            string user = "", password, user_type = cmbUserType.Text, id; //Variables de login
             bool result = false; //Resultado del login query
 
 
@@ -53,8 +55,12 @@ namespace Automotriz
                 else if (result && user_type.Equals("Cliente"))
                 {
                     id = DataBaseConnection.Credentials_in_menu(user, password, user_type);
+
+    
                     Menu_client new_form = new Menu_client();
                     new_form.Show();
+
+                    
                     Hide();
                 }
                 else
@@ -69,6 +75,11 @@ namespace Automotriz
         private void txtUser_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        public string getId()
+        {
+            return id;
         }
     }
 }

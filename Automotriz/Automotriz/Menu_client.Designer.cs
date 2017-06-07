@@ -34,6 +34,8 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.dgvClient_Info = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblId_Client = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClient_Info)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,11 +91,31 @@
             this.label2.TabIndex = 23;
             this.label2.Text = "Información personal";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 37);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 13);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Id del cliente:";
+            // 
+            // lblId_Client
+            // 
+            this.lblId_Client.AutoSize = true;
+            this.lblId_Client.Location = new System.Drawing.Point(88, 37);
+            this.lblId_Client.Name = "lblId_Client";
+            this.lblId_Client.Size = new System.Drawing.Size(28, 13);
+            this.lblId_Client.TabIndex = 25;
+            this.lblId_Client.Text = "###";
+            // 
             // Menu_client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(453, 261);
+            this.Controls.Add(this.lblId_Client);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvClient_Info);
             this.Controls.Add(this.btnSalir);
@@ -116,5 +138,7 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.DataGridView dgvClient_Info;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblId_Client;
     }
 }

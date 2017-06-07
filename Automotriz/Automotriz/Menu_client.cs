@@ -16,6 +16,7 @@ namespace Automotriz
         public Menu_client()
         {
             InitializeComponent();
+            
         }
 
         private void Menu_client_Load(object sender, EventArgs e)
@@ -32,10 +33,13 @@ namespace Automotriz
         {
             try
             {
+                Login log = new Login();
+                string id_Client = log.id;
+                lblId_Client.Text = id_Client;
                 SqlConnection conn = DataBaseConnection.DataBase_Open_Connection();
 
                 
-                var query = "select IdClient, Client_name, Client_phone, Client_user, Client_address, Client_id_card from tblClient where IdClient = '" + "" + "'";
+                var query = "Select IdClient, Client_name, Client_phone, Client_user, Client_address, Client_id_card from tblClient where IdClient = '" + "" + "'";
 
                 SqlCommand command = new SqlCommand(query, conn);
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
