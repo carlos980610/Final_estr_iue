@@ -14,8 +14,9 @@ namespace Automotriz
         //Abrir conexion con la base de datos
         public static SqlConnection DataBase_Open_Connection()
         {
-            string route = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\CarlosAndrés\\Documents\\Visual Studio 2017\\Projects\\Final_estructuras_iue\\Final_estr_iue\\Automotriz\\Automotriz\\DataBase\\dbAutomotriz.mdf;Integrated Security=True;Connect Timeout=30";
-            SqlConnection connection = new SqlConnection(route);
+            var con_carlos_desk = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\CarlosAndrés\\Documents\\Visual Studio 2017\\Projects\\Final_estructuras_iue\\Final_estr_iue\\Automotriz\\Automotriz\\DataBase\\dbAutomotriz.mdf;Integrated Security=True;Connect Timeout=30";
+            string con_carlos_laptop = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Users\\CarlosAndrés\\Documents\\Visual Studio 2017\\Projects\\Final_estr_iue\\Automotriz\\Automotriz\\DataBase\\dbAutomotriz.mdf;Integrated Security=True;Connect Timeout=30";
+            SqlConnection connection = new SqlConnection(con_carlos_laptop);
             try
             {
                 connection.Open();
