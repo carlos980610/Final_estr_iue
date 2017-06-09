@@ -124,7 +124,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Menu_client";
             this.Text = "Menu_client";
-            this.Load += new System.EventHandler(this.Menu_client_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClient_Info)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
