@@ -22,7 +22,9 @@ namespace Automotriz
 
         private void Menu_client_Load(object sender, EventArgs e)
         {
-           
+            SendClass sendclass = new SendClass();
+            id = sendclass.SetterId();
+            lblId_Cliente.Text = id;
             try
             {
                 SqlConnection conn = DataBaseConnection.DataBase_Open_Connection();
@@ -53,9 +55,7 @@ namespace Automotriz
 
         private void Menu_client_Load_1(object sender, EventArgs e)
         {
-            SendClass sendclass = new SendClass();
-            id = sendclass.SetterId();
-            lblId_Cliente.Text = id;
+           
         }
     }
 }

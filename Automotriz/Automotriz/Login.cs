@@ -16,9 +16,9 @@ namespace Automotriz
         public Login()
         {
             InitializeComponent();
-            cmbUserType.Text = "Taller";
-            txtUser.Text = "Manuela";
-            txtPassword.Text = "2";
+            cmbUserType.Text = "Cliente";
+            txtUser.Text = "Marta";
+            txtPassword.Text = "5";
         }
 
         private void btnExit_Click(object sender, EventArgs e)
