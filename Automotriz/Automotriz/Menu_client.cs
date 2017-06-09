@@ -22,14 +22,14 @@ namespace Automotriz
 
         private void Menu_client_Load(object sender, EventArgs e)
         {
-           
+            SendClass sendclass = new SendClass();
+            id = sendclass.SetterId();
+            lblId_Cliente.Text = id;
+
             try
             {
                 SqlConnection conn = DataBaseConnection.DataBase_Open_Connection();
-
-
-                var query = "select IdClient, Client_name, Client_phone, Client_user, Client_address, Client_id_card from tblClient where IdClient = '" + "" + "'";
-
+                var query = "select IdClient, Client_name, Client_phone, Client_user, Client_address, Client_id_card from tblClient where IdClient = '" + id + "'";
                 SqlCommand command = new SqlCommand(query, conn);
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 DataTable data_table = new DataTable();
@@ -53,9 +53,7 @@ namespace Automotriz
 
         private void Menu_client_Load_1(object sender, EventArgs e)
         {
-            SendClass sendclass = new SendClass();
-            id = sendclass.SetterId();
-            lblId_Cliente.Text = id;
+            
         }
     }
 }

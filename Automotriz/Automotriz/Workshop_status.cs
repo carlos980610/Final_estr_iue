@@ -16,5 +16,10 @@ namespace Automotriz
         {
             InitializeComponent();
         }
+
+        private void Workshop_status_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

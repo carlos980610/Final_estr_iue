@@ -67,5 +67,10 @@ namespace Automotriz
             Workshop new_form = new Workshop();
             new_form.ShowDialog();
         }
+
+        private void Menu_user_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
