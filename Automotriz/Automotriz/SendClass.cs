@@ -8,7 +8,7 @@ namespace Automotriz
 {
     class SendClass
     {
-        string Id;
+        string Id; // Id que lleva
 
        public SendClass()
         {
@@ -16,7 +16,7 @@ namespace Automotriz
         }
         public void GetterId(string id)
         {
-            Id = id;
+            Id = id; //id que trae
         }
 
         public string SetterId()
