@@ -57,7 +57,7 @@ namespace Automotriz
                     id = DataBaseConnection.Credentials_in_menu(user, password, user_type);
                     SendClass sendclass = new SendClass();
                     sendclass.GetterId(id);
-                    Menu_client new_form = new Menu_client();
+                    Menu_client new_form = new Menu_client(id);
                     new_form.Show();
                     Hide();
                 }
@@ -74,7 +74,6 @@ namespace Automotriz
         {
 
         }
-
         private void Login_Load(object sender, EventArgs e)
         {
 

@@ -14,9 +14,10 @@ namespace Automotriz
     public partial class Menu_client : Form
     {
         string id;
-        public Menu_client()
+        public Menu_client(string id)
         {
             InitializeComponent();
+            lblId_Cliente.Text = id;
         }
 
         private void Menu_client_Load(object sender, EventArgs e)
