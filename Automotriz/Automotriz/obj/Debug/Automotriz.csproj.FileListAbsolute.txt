@@ -57,3 +57,21 @@ D:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estr_iue\Auto
 D:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estr_iue\Automotriz\Automotriz\bin\Debug\Automotriz.exe.config
 D:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estr_iue\Automotriz\Automotriz\bin\Debug\Automotriz.exe
 D:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estr_iue\Automotriz\Automotriz\bin\Debug\Automotriz.pdb
+C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\bin\Debug\Automotriz.exe.config
+C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\bin\Debug\Automotriz.exe
+C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\bin\Debug\Automotriz.pdb
+C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.csprojResolveAssemblyReference.cache
+C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Cars.resources
+C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Car_life_sheet.resources
+C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Clients.resources
+C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Login.resources
+C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Menu_client.resources
+C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Menu_user.resources
+C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Properties.Resources.resources
+C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.SingUp_car.resources
+C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.SingUp_client.resources
+C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Workshop.resources
+C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Workshop_status.resources
+C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.csproj.GenerateResource.Cache
+C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.exe
+C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.pdb

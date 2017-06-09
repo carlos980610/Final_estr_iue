@@ -84,6 +84,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SendClass.cs" />
     <Compile Include="SingUp_car.cs">
       <SubType>Form</SubType>
     </Compile>

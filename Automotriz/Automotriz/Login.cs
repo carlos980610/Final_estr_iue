@@ -12,6 +12,7 @@ namespace Automotriz
 {
     public partial class Login : Form
     {
+
         public Login()
         {
             InitializeComponent();
@@ -52,7 +53,10 @@ namespace Automotriz
                 }
                 else if (result && user_type.Equals("Cliente"))
                 {
+
                     id = DataBaseConnection.Credentials_in_menu(user, password, user_type);
+                    SendClass sendclass = new SendClass();
+                    sendclass.GetterId(id);
                     Menu_client new_form = new Menu_client();
                     new_form.Show();
                     Hide();
