@@ -28,7 +28,7 @@ namespace Automotriz
             }
             return connection;
         }
-        //Cerrar conexion con la base de datos
+        //Cerrar conexion con la base de datos  
         public static void DataBase_Close_Connection(SqlConnection connection)
         {
             try

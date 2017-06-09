@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 namespace Automotriz
 {
     public partial class Menu_client : Form
-    {
+    {   
         public Menu_client()
         {
             InitializeComponent();
