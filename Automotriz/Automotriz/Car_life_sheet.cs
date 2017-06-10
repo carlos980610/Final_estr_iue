@@ -15,6 +15,8 @@ namespace Automotriz
         public Car_life_sheet()
         {
             InitializeComponent();
+
+
         }
 
 
@@ -23,5 +25,9 @@ namespace Automotriz
 
         }
 
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

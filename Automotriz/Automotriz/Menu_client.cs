@@ -78,6 +78,21 @@ namespace Automotriz
             this.Close();
         }
 
+        private void btnBuscarvehiculo_Click(object sender, EventArgs e)
+        {
+            Car_life_sheet new_form = new Car_life_sheet();
+            new_form.Show();
+            Hide();
+        }
 
+        private void txtBuscarvehiculo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Menu_client_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -35,6 +35,9 @@
             this.lblId_Cliente = new System.Windows.Forms.Label();
             this.dgvCars_Owner = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtBuscarvehiculo = new System.Windows.Forms.TextBox();
+            this.btnBuscarvehiculo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClient_Info)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCars_Owner)).BeginInit();
             this.SuspendLayout();
@@ -101,11 +104,41 @@
             this.label1.TabIndex = 27;
             this.label1.Text = "Vehiculos:";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 328);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(137, 13);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "Digite la placa del vehiculo ";
+            // 
+            // txtBuscarvehiculo
+            // 
+            this.txtBuscarvehiculo.Location = new System.Drawing.Point(155, 320);
+            this.txtBuscarvehiculo.Name = "txtBuscarvehiculo";
+            this.txtBuscarvehiculo.Size = new System.Drawing.Size(100, 20);
+            this.txtBuscarvehiculo.TabIndex = 29;
+            this.txtBuscarvehiculo.TextChanged += new System.EventHandler(this.txtBuscarvehiculo_TextChanged);
+            // 
+            // btnBuscarvehiculo
+            // 
+            this.btnBuscarvehiculo.Location = new System.Drawing.Point(261, 320);
+            this.btnBuscarvehiculo.Name = "btnBuscarvehiculo";
+            this.btnBuscarvehiculo.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscarvehiculo.TabIndex = 30;
+            this.btnBuscarvehiculo.Text = "Buscar";
+            this.btnBuscarvehiculo.UseVisualStyleBackColor = true;
+            this.btnBuscarvehiculo.Click += new System.EventHandler(this.btnBuscarvehiculo_Click);
+            // 
             // Menu_client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(780, 393);
+            this.Controls.Add(this.btnBuscarvehiculo);
+            this.Controls.Add(this.txtBuscarvehiculo);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvCars_Owner);
             this.Controls.Add(this.lblId_Cliente);
@@ -115,6 +148,7 @@
             this.Controls.Add(this.btnSalir);
             this.Name = "Menu_client";
             this.Text = "Menu_client";
+            this.Load += new System.EventHandler(this.Menu_client_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClient_Info)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCars_Owner)).EndInit();
             this.ResumeLayout(false);
@@ -130,5 +164,8 @@
         private System.Windows.Forms.Label lblId_Cliente;
         private System.Windows.Forms.DataGridView dgvCars_Owner;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtBuscarvehiculo;
+        private System.Windows.Forms.Button btnBuscarvehiculo;
     }
 }

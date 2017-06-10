@@ -211,6 +211,7 @@
             this.txtId_Client.Name = "txtId_Client";
             this.txtId_Client.Size = new System.Drawing.Size(109, 20);
             this.txtId_Client.TabIndex = 18;
+            this.txtId_Client.TextChanged += new System.EventHandler(this.txtId_Client_TextChanged);
             // 
             // btnOk
             // 
@@ -358,6 +359,7 @@
             this.Controls.Add(this.label2);
             this.Name = "SingUp_car";
             this.Text = "SingUp_car";
+            this.Load += new System.EventHandler(this.SingUp_car_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
