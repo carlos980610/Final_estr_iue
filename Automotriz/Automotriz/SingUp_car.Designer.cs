@@ -57,6 +57,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.lblId_client = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -186,7 +187,7 @@
             // 
             // btnSearch_Client
             // 
-            this.btnSearch_Client.Location = new System.Drawing.Point(341, 101);
+            this.btnSearch_Client.Location = new System.Drawing.Point(341, 128);
             this.btnSearch_Client.Name = "btnSearch_Client";
             this.btnSearch_Client.Size = new System.Drawing.Size(109, 23);
             this.btnSearch_Client.TabIndex = 16;
@@ -196,7 +197,7 @@
             // 
             // btnNew_Client
             // 
-            this.btnNew_Client.Location = new System.Drawing.Point(456, 101);
+            this.btnNew_Client.Location = new System.Drawing.Point(456, 128);
             this.btnNew_Client.Name = "btnNew_Client";
             this.btnNew_Client.Size = new System.Drawing.Size(109, 23);
             this.btnNew_Client.TabIndex = 17;
@@ -206,7 +207,7 @@
             // 
             // txtId_Client
             // 
-            this.txtId_Client.Location = new System.Drawing.Point(216, 103);
+            this.txtId_Client.Location = new System.Drawing.Point(216, 130);
             this.txtId_Client.Name = "txtId_Client";
             this.txtId_Client.Size = new System.Drawing.Size(109, 20);
             this.txtId_Client.TabIndex = 18;
@@ -224,7 +225,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(338, 137);
+            this.label9.Location = new System.Drawing.Point(338, 164);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(44, 13);
             this.label9.TabIndex = 20;
@@ -233,7 +234,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(407, 137);
+            this.lblName.Location = new System.Drawing.Point(407, 164);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(53, 13);
             this.lblName.TabIndex = 21;
@@ -242,7 +243,7 @@
             // lblId_Card
             // 
             this.lblId_Card.AutoSize = true;
-            this.lblId_Card.Location = new System.Drawing.Point(407, 159);
+            this.lblId_Card.Location = new System.Drawing.Point(407, 186);
             this.lblId_Card.Name = "lblId_Card";
             this.lblId_Card.Size = new System.Drawing.Size(59, 13);
             this.lblId_Card.TabIndex = 23;
@@ -251,7 +252,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(338, 159);
+            this.label12.Location = new System.Drawing.Point(338, 186);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(40, 13);
             this.label12.TabIndex = 22;
@@ -260,7 +261,7 @@
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(407, 182);
+            this.lblPhone.Location = new System.Drawing.Point(407, 209);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(57, 13);
             this.lblPhone.TabIndex = 25;
@@ -269,7 +270,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(338, 182);
+            this.label14.Location = new System.Drawing.Point(338, 209);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(49, 13);
             this.label14.TabIndex = 24;
@@ -278,7 +279,7 @@
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(407, 208);
+            this.lblAddress.Location = new System.Drawing.Point(407, 235);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(65, 13);
             this.lblAddress.TabIndex = 27;
@@ -287,7 +288,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(338, 208);
+            this.label16.Location = new System.Drawing.Point(338, 235);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(52, 13);
             this.label16.TabIndex = 26;
@@ -296,7 +297,7 @@
             // lblId_client
             // 
             this.lblId_client.AutoSize = true;
-            this.lblId_client.Location = new System.Drawing.Point(272, 137);
+            this.lblId_client.Location = new System.Drawing.Point(272, 164);
             this.lblId_client.Name = "lblId_client";
             this.lblId_client.Size = new System.Drawing.Size(38, 13);
             this.lblId_client.TabIndex = 29;
@@ -305,17 +306,27 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(213, 137);
+            this.label11.Location = new System.Drawing.Point(213, 164);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(50, 13);
             this.label11.TabIndex = 28;
             this.label11.Text = "Id cliente";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(213, 111);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(128, 13);
+            this.label10.TabIndex = 30;
+            this.label10.Text = "Ingrese cédula del cliente";
             // 
             // SingUp_car
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(580, 298);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.lblId_client);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.lblAddress);
@@ -385,5 +396,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label lblId_client;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
     }
 }
