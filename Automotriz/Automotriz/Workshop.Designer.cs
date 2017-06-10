@@ -49,6 +49,10 @@
             this.label11 = new System.Windows.Forms.Label();
             this.lblCar_Owner = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.lblTotal_Manteniance_Cars = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblTotal_Repair_Cars = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCars_in_repair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCars_in_maintenance)).BeginInit();
             this.SuspendLayout();
@@ -75,7 +79,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(542, 52);
+            this.label3.Location = new System.Drawing.Point(26, 297);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(140, 13);
             this.label3.TabIndex = 2;
@@ -84,7 +88,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(264, 17);
+            this.label4.Location = new System.Drawing.Point(179, 17);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(148, 13);
             this.label4.TabIndex = 3;
@@ -93,7 +97,7 @@
             // lblTotal_Cars
             // 
             this.lblTotal_Cars.AutoSize = true;
-            this.lblTotal_Cars.Location = new System.Drawing.Point(418, 17);
+            this.lblTotal_Cars.Location = new System.Drawing.Point(333, 17);
             this.lblTotal_Cars.Name = "lblTotal_Cars";
             this.lblTotal_Cars.Size = new System.Drawing.Size(28, 13);
             this.lblTotal_Cars.TabIndex = 4;
@@ -101,14 +105,14 @@
             // 
             // txtCar_Plate
             // 
-            this.txtCar_Plate.Location = new System.Drawing.Point(28, 291);
+            this.txtCar_Plate.Location = new System.Drawing.Point(28, 584);
             this.txtCar_Plate.Name = "txtCar_Plate";
             this.txtCar_Plate.Size = new System.Drawing.Size(100, 20);
             this.txtCar_Plate.TabIndex = 5;
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(904, 360);
+            this.btnExit.Location = new System.Drawing.Point(809, 637);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(124, 23);
             this.btnExit.TabIndex = 6;
@@ -118,7 +122,7 @@
             // 
             // btnAdd_to_Workshop
             // 
-            this.btnAdd_to_Workshop.Location = new System.Drawing.Point(352, 289);
+            this.btnAdd_to_Workshop.Location = new System.Drawing.Point(352, 582);
             this.btnAdd_to_Workshop.Name = "btnAdd_to_Workshop";
             this.btnAdd_to_Workshop.Size = new System.Drawing.Size(75, 23);
             this.btnAdd_to_Workshop.TabIndex = 9;
@@ -128,17 +132,17 @@
             // dgvCars_in_repair
             // 
             this.dgvCars_in_repair.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCars_in_repair.Location = new System.Drawing.Point(12, 78);
+            this.dgvCars_in_repair.Location = new System.Drawing.Point(29, 68);
             this.dgvCars_in_repair.Name = "dgvCars_in_repair";
-            this.dgvCars_in_repair.Size = new System.Drawing.Size(488, 150);
+            this.dgvCars_in_repair.Size = new System.Drawing.Size(892, 193);
             this.dgvCars_in_repair.TabIndex = 10;
             // 
             // dgvCars_in_maintenance
             // 
             this.dgvCars_in_maintenance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCars_in_maintenance.Location = new System.Drawing.Point(540, 78);
+            this.dgvCars_in_maintenance.Location = new System.Drawing.Point(29, 313);
             this.dgvCars_in_maintenance.Name = "dgvCars_in_maintenance";
-            this.dgvCars_in_maintenance.Size = new System.Drawing.Size(488, 150);
+            this.dgvCars_in_maintenance.Size = new System.Drawing.Size(891, 204);
             this.dgvCars_in_maintenance.TabIndex = 11;
             // 
             // cmbService_Type
@@ -148,7 +152,7 @@
             this.cmbService_Type.Items.AddRange(new object[] {
             "Mantenimiento",
             "Reparacion"});
-            this.cmbService_Type.Location = new System.Drawing.Point(225, 291);
+            this.cmbService_Type.Location = new System.Drawing.Point(225, 584);
             this.cmbService_Type.Name = "cmbService_Type";
             this.cmbService_Type.Size = new System.Drawing.Size(121, 21);
             this.cmbService_Type.TabIndex = 12;
@@ -157,7 +161,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(24, 244);
+            this.label5.Location = new System.Drawing.Point(25, 532);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(178, 20);
             this.label5.TabIndex = 13;
@@ -166,7 +170,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(26, 275);
+            this.label6.Location = new System.Drawing.Point(26, 568);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(95, 13);
             this.label6.TabIndex = 14;
@@ -175,7 +179,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(222, 275);
+            this.label7.Location = new System.Drawing.Point(222, 568);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 13);
             this.label7.TabIndex = 15;
@@ -184,7 +188,7 @@
             // btnSearch
             // 
             this.btnSearch.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
-            this.btnSearch.Location = new System.Drawing.Point(134, 289);
+            this.btnSearch.Location = new System.Drawing.Point(134, 582);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 16;
@@ -195,7 +199,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(26, 325);
+            this.label8.Location = new System.Drawing.Point(26, 618);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(37, 13);
             this.label8.TabIndex = 17;
@@ -204,7 +208,7 @@
             // lblCar_Mark
             // 
             this.lblCar_Mark.AutoSize = true;
-            this.lblCar_Mark.Location = new System.Drawing.Point(86, 325);
+            this.lblCar_Mark.Location = new System.Drawing.Point(86, 618);
             this.lblCar_Mark.Name = "lblCar_Mark";
             this.lblCar_Mark.Size = new System.Drawing.Size(28, 13);
             this.lblCar_Mark.TabIndex = 18;
@@ -213,7 +217,7 @@
             // lblCar_Model
             // 
             this.lblCar_Model.AutoSize = true;
-            this.lblCar_Model.Location = new System.Drawing.Point(86, 348);
+            this.lblCar_Model.Location = new System.Drawing.Point(86, 641);
             this.lblCar_Model.Name = "lblCar_Model";
             this.lblCar_Model.Size = new System.Drawing.Size(28, 13);
             this.lblCar_Model.TabIndex = 20;
@@ -222,7 +226,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(26, 348);
+            this.label11.Location = new System.Drawing.Point(26, 641);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(42, 13);
             this.label11.TabIndex = 19;
@@ -231,7 +235,7 @@
             // lblCar_Owner
             // 
             this.lblCar_Owner.AutoSize = true;
-            this.lblCar_Owner.Location = new System.Drawing.Point(239, 325);
+            this.lblCar_Owner.Location = new System.Drawing.Point(239, 618);
             this.lblCar_Owner.Name = "lblCar_Owner";
             this.lblCar_Owner.Size = new System.Drawing.Size(28, 13);
             this.lblCar_Owner.TabIndex = 22;
@@ -240,17 +244,57 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(179, 325);
+            this.label12.Location = new System.Drawing.Point(179, 618);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(57, 13);
             this.label12.TabIndex = 21;
             this.label12.Text = "Propietario";
             // 
+            // lblTotal_Manteniance_Cars
+            // 
+            this.lblTotal_Manteniance_Cars.AutoSize = true;
+            this.lblTotal_Manteniance_Cars.Location = new System.Drawing.Point(571, 17);
+            this.lblTotal_Manteniance_Cars.Name = "lblTotal_Manteniance_Cars";
+            this.lblTotal_Manteniance_Cars.Size = new System.Drawing.Size(28, 13);
+            this.lblTotal_Manteniance_Cars.TabIndex = 24;
+            this.lblTotal_Manteniance_Cars.Text = "###";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(382, 17);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(183, 13);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "Total de vehiculos en mantenimiento:";
+            // 
+            // lblTotal_Repair_Cars
+            // 
+            this.lblTotal_Repair_Cars.AutoSize = true;
+            this.lblTotal_Repair_Cars.Location = new System.Drawing.Point(571, 30);
+            this.lblTotal_Repair_Cars.Name = "lblTotal_Repair_Cars";
+            this.lblTotal_Repair_Cars.Size = new System.Drawing.Size(28, 13);
+            this.lblTotal_Repair_Cars.TabIndex = 26;
+            this.lblTotal_Repair_Cars.Text = "###";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(382, 30);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(165, 13);
+            this.label14.TabIndex = 25;
+            this.label14.Text = "Total de vehiculos en reparación:";
+            // 
             // Workshop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1047, 395);
+            this.ClientSize = new System.Drawing.Size(945, 672);
+            this.Controls.Add(this.lblTotal_Repair_Cars);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.lblTotal_Manteniance_Cars);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.lblCar_Owner);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.lblCar_Model);
@@ -305,5 +349,9 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblCar_Owner;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblTotal_Manteniance_Cars;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblTotal_Repair_Cars;
+        private System.Windows.Forms.Label label14;
     }
 }

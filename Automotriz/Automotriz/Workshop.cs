@@ -13,7 +13,8 @@ namespace Automotriz
 {
     public partial class Workshop : Form
     {
-    
+
+        int total_cars; //Cantidad total de carros en el taller
         public Workshop()
         {
             InitializeComponent();
@@ -82,9 +83,14 @@ namespace Automotriz
             {
                 MessageBox.Show("Error al cargar los datos \nInfo: " + exception);
             }
-            
-        }
 
+            total_cars = dgvCars_in_repair.Rows.Count + dgvCars_in_maintenance.Rows.Count;
+            lblTotal_Manteniance_Cars.Text = dgvCars_in_maintenance.Rows.Count.ToString();
+            lblTotal_Repair_Cars.Text = dgvCars_in_repair.Rows.Count.ToString();
+            lblTotal_Cars.Text = total_cars.ToString();
+
+
+        }
         private void btnSearch_Click(object sender, EventArgs e)
         {
             try
@@ -121,5 +127,6 @@ namespace Automotriz
                 throw;
             }
         }
+
     }
 }

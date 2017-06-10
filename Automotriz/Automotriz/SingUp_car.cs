@@ -19,7 +19,7 @@ namespace Automotriz
             try
             {
                 SqlConnection connection = DataBaseConnection.DataBase_Open_Connection();
-                var query = "Select IdClient, Client_name, Client_id_card, Client_phone, Client_address from tblClient where IdClient = '" + txtId_Client.Text + "'";
+                var query = "Select IdClient, Client_name, Client_id_card, Client_phone, Client_address from tblClient where Client_id_card = '" + txtId_Client.Text + "'";
                 SqlCommand command = new SqlCommand(query, connection);
                 SqlDataReader data_reader = command.ExecuteReader();
 
@@ -35,8 +35,11 @@ namespace Automotriz
                 {
                     MessageBox.Show("No se encontró el ID, favor verificar");
                     lblId_client.Text = "Not ID";
+                    lblName.Text = "Not ID";
+                    lblId_Card.Text = "Not ID";
+                    lblPhone.Text = "Not ID";
+                    lblAddress.Text = "Not ID";
                 }
-
                 DataBaseConnection.DataBase_Close_Connection(connection);
             }
             catch (Exception exception)
