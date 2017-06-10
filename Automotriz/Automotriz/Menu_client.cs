@@ -14,17 +14,13 @@ namespace Automotriz
     public partial class Menu_client : Form
     {
         string id;
-        public Menu_client(string id)
+        public Menu_client (string id)
         {
             InitializeComponent();
             lblId_Cliente.Text = id;
-        }
+            dgvClient_Info.Enabled = false;
 
-        private void Menu_client_Load(object sender, EventArgs e)
-        {
-            SendClass sendclass = new SendClass();
-            id = sendclass.SetterId();
-            lblId_Cliente.Text = id;
+            //Trae la información del cliente y la coloca en el DatGridView
             try
             {
                 SqlConnection conn = DataBaseConnection.DataBase_Open_Connection();
@@ -44,6 +40,37 @@ namespace Automotriz
             {
                 MessageBox.Show("No consultó");
             }
+
+
+
+
+            try
+            {
+                SqlConnection conn = DataBaseConnection.DataBase_Open_Connection();
+                var query = "select * from tblCar where Car_owner_id = " + id;
+
+                SqlCommand command = new SqlCommand(query, conn);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable data_table = new DataTable();
+
+                adapter.Fill(data_table);
+
+                dgvCars_Owner.DataSource = data_table;
+
+                DataBaseConnection.DataBase_Close_Connection(conn);
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("No consultó");
+            }
+        }
+
+        private void Menu_client_Load(object sender, EventArgs e)
+        {
+            //Carga el ID del cliente en el formulario
+            SendClass sendclass = new SendClass();
+            id = sendclass.SetterId();
+            lblId_Cliente.Text = id;
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

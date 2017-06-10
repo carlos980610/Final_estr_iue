@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//ClASE QYE SE UTILIZA PARA REALIZA PASO DE VARIABLES ENTRE CLASES
 namespace Automotriz
 {
     class SendClass
