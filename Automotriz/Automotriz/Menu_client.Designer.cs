@@ -44,7 +44,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(676, 361);
+            this.btnSalir.Location = new System.Drawing.Point(676, 432);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(92, 20);
             this.btnSalir.TabIndex = 21;
@@ -90,9 +90,9 @@
             // dgvCars_Owner
             // 
             this.dgvCars_Owner.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCars_Owner.Location = new System.Drawing.Point(15, 195);
+            this.dgvCars_Owner.Location = new System.Drawing.Point(12, 195);
             this.dgvCars_Owner.Name = "dgvCars_Owner";
-            this.dgvCars_Owner.Size = new System.Drawing.Size(753, 84);
+            this.dgvCars_Owner.Size = new System.Drawing.Size(753, 176);
             this.dgvCars_Owner.TabIndex = 26;
             // 
             // label1
@@ -107,7 +107,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 328);
+            this.label4.Location = new System.Drawing.Point(12, 413);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(137, 13);
             this.label4.TabIndex = 28;
@@ -115,7 +115,7 @@
             // 
             // txtBuscarvehiculo
             // 
-            this.txtBuscarvehiculo.Location = new System.Drawing.Point(155, 320);
+            this.txtBuscarvehiculo.Location = new System.Drawing.Point(155, 405);
             this.txtBuscarvehiculo.Name = "txtBuscarvehiculo";
             this.txtBuscarvehiculo.Size = new System.Drawing.Size(100, 20);
             this.txtBuscarvehiculo.TabIndex = 29;
@@ -123,7 +123,7 @@
             // 
             // btnBuscarvehiculo
             // 
-            this.btnBuscarvehiculo.Location = new System.Drawing.Point(261, 320);
+            this.btnBuscarvehiculo.Location = new System.Drawing.Point(261, 405);
             this.btnBuscarvehiculo.Name = "btnBuscarvehiculo";
             this.btnBuscarvehiculo.Size = new System.Drawing.Size(75, 23);
             this.btnBuscarvehiculo.TabIndex = 30;
@@ -135,7 +135,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(780, 393);
+            this.ClientSize = new System.Drawing.Size(780, 464);
             this.Controls.Add(this.btnBuscarvehiculo);
             this.Controls.Add(this.txtBuscarvehiculo);
             this.Controls.Add(this.label4);
