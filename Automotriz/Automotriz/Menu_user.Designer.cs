@@ -34,6 +34,7 @@
             this.btnRegister_Car = new System.Windows.Forms.Button();
             this.btnSeeGarage = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnAdd_Part = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSee_Cars
@@ -96,11 +97,21 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Menu Usuario";
             // 
+            // btnAdd_Part
+            // 
+            this.btnAdd_Part.Location = new System.Drawing.Point(31, 108);
+            this.btnAdd_Part.Name = "btnAdd_Part";
+            this.btnAdd_Part.Size = new System.Drawing.Size(141, 23);
+            this.btnAdd_Part.TabIndex = 9;
+            this.btnAdd_Part.Text = "Repuestos";
+            this.btnAdd_Part.UseVisualStyleBackColor = true;
+            // 
             // Menu_user
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(370, 178);
+            this.Controls.Add(this.btnAdd_Part);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSeeGarage);
             this.Controls.Add(this.btnRegister_Car);
@@ -121,5 +132,6 @@
         private System.Windows.Forms.Button btnRegister_Car;
         private System.Windows.Forms.Button btnSeeGarage;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnAdd_Part;
     }
 }

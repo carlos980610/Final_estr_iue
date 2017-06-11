@@ -80,16 +80,21 @@ namespace Automotriz
 
         private void btnBuscarvehiculo_Click(object sender, EventArgs e)
         {
-            Car_life_sheet new_form = new Car_life_sheet();
-            new_form.Show();
-            Hide();
-        }
+            try
+            {
+                Car_life_sheet new_form = new Car_life_sheet(txtBuscarvehiculo.Text, lblId_Cliente.Text);
+                new_form.Show();  //TODO - aplicar parametro ID para poder cerrar el formulario de cliente
+            }
+            catch (Exception)
+            {
 
+            }
+            txtBuscarvehiculo.Text = "";
+        }
         private void txtBuscarvehiculo_TextChanged(object sender, EventArgs e)
         {
 
         }
-
         private void Menu_client_Load_1(object sender, EventArgs e)
         {
 
