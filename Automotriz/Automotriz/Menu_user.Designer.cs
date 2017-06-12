@@ -121,7 +121,6 @@
             this.Controls.Add(this.btnSee_Cars);
             this.Name = "Menu_user";
             this.Text = "Menu_user";
-            this.Load += new System.EventHandler(this.Menu_user_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 

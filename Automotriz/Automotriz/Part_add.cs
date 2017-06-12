@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Automotriz
 {
@@ -19,13 +20,27 @@ namespace Automotriz
 
         private void Part_add_Load(object sender, EventArgs e)
         {
+            try
+            {
+                SqlConnection conn = DataBaseConnection.DataBase_Open_Connection();
+                var query = "Select * from tblPart";
+                SqlCommand command = new SqlCommand(query, conn);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable data_table = new DataTable();
+                adapter.Fill(data_table);
 
+                dgvParts.DataSource = data_table;
+
+                DataBaseConnection.DataBase_Close_Connection(conn);
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("Error al consultar las partes del vehiculo");
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Menu_user new_from = new Menu_user();
-            new_from.Show();
             Close();
         }
     }

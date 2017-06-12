@@ -76,3 +76,4 @@ C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\
 C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.pdb
 D:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Menu_client.resources
 C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Part_add.resources
+D:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Part_add.resources

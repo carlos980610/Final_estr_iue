@@ -41,9 +41,6 @@ namespace Automotriz
                 MessageBox.Show("No consultó");
             }
 
-
-
-
             try
             {
                 SqlConnection conn = DataBaseConnection.DataBase_Open_Connection();

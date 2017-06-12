@@ -68,16 +68,10 @@ namespace Automotriz
             new_form.ShowDialog();
         }
 
-        private void Menu_user_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAdd_Part_Click(object sender, EventArgs e)
         {
             Part_add new_form = new Part_add();
-            new_form.Show();
-            Hide();
+            new_form.ShowDialog();
         }
     }
 }

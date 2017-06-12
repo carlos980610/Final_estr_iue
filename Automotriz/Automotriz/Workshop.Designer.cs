@@ -53,6 +53,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.lblTotal_Repair_Cars = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lblIdCar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCars_in_repair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCars_in_maintenance)).BeginInit();
             this.SuspendLayout();
@@ -128,12 +130,14 @@
             this.btnAdd_to_Workshop.TabIndex = 9;
             this.btnAdd_to_Workshop.Text = "Añadir";
             this.btnAdd_to_Workshop.UseVisualStyleBackColor = true;
+            this.btnAdd_to_Workshop.Click += new System.EventHandler(this.btnAdd_to_Workshop_Click);
             // 
             // dgvCars_in_repair
             // 
             this.dgvCars_in_repair.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCars_in_repair.Location = new System.Drawing.Point(29, 68);
             this.dgvCars_in_repair.Name = "dgvCars_in_repair";
+            this.dgvCars_in_repair.ReadOnly = true;
             this.dgvCars_in_repair.Size = new System.Drawing.Size(892, 193);
             this.dgvCars_in_repair.TabIndex = 10;
             // 
@@ -142,6 +146,7 @@
             this.dgvCars_in_maintenance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCars_in_maintenance.Location = new System.Drawing.Point(29, 313);
             this.dgvCars_in_maintenance.Name = "dgvCars_in_maintenance";
+            this.dgvCars_in_maintenance.ReadOnly = true;
             this.dgvCars_in_maintenance.Size = new System.Drawing.Size(891, 204);
             this.dgvCars_in_maintenance.TabIndex = 11;
             // 
@@ -250,6 +255,7 @@
             this.label12.Size = new System.Drawing.Size(57, 13);
             this.label12.TabIndex = 21;
             this.label12.Text = "Propietario";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // lblTotal_Manteniance_Cars
             // 
@@ -287,11 +293,31 @@
             this.label14.TabIndex = 25;
             this.label14.Text = "Total de vehiculos en reparación:";
             // 
-            // Workshop
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(179, 641);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(19, 13);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "Id:";
+            // 
+            // label13
+            // 
+            this.lblIdCar.AutoSize = true;
+            this.lblIdCar.Location = new System.Drawing.Point(239, 642);
+            this.lblIdCar.Name = "label13";
+            this.lblIdCar.Size = new System.Drawing.Size(28, 13);
+            this.lblIdCar.TabIndex = 28;
+            this.lblIdCar.Text = "XXX";
+            // 
+            // lblIdCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(945, 672);
+            this.Controls.Add(this.lblIdCar);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.lblTotal_Repair_Cars);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.lblTotal_Manteniance_Cars);
@@ -317,7 +343,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Workshop";
+            this.Name = "lblIdCar";
             this.Text = "Workshop";
             this.Load += new System.EventHandler(this.Workshop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCars_in_repair)).EndInit();
@@ -354,5 +380,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblTotal_Repair_Cars;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblIdCar;
     }
 }

@@ -96,7 +96,7 @@ namespace Automotriz
             try
             {
                 SqlConnection conn = DataBaseConnection.DataBase_Open_Connection();
-                var query_car = "select Car_mark, Car_model from tblCar where Car_carriage_plate = '" + txtCar_Plate + "'";
+                var query_car = "select Id_Car, Car_mark, Car_model from tblCar where Car_carriage_plate = '" + txtCar_Plate + "'";
                 SqlCommand command_car = new SqlCommand(query_car, conn);
                 SqlDataReader data_reader = command_car.ExecuteReader();
 
@@ -104,8 +104,9 @@ namespace Automotriz
                 {
                     lblCar_Mark.Text = data_reader["Car_mark"].ToString();
                     lblCar_Model.Text = data_reader["Car_model"].ToString();
+                    lblIdCar.Text = data_reader["IdCar"].ToString();
 
-                   //lblCar_Owner.Text = data_reader["Car_"].ToString();
+                    //lblCar_Owner.Text = data_reader["Car_wner_id"].ToString();
                 }
                 else
                 {
@@ -113,20 +114,59 @@ namespace Automotriz
                     lblCar_Mark.Text = "Not";
                     lblCar_Model.Text = "Not";
                     lblCar_Owner.Text = "Not";
+                    lblIdCar.Text = "Not";
+                    txtCar_Plate.Text = "";
 
                 }
 
                 DataBaseConnection.DataBase_Close_Connection(conn);
 
             }
-            catch (Exception)
+            catch (Exception exception)
             {
-
-                throw;
+                MessageBox.Show("No se ha podido recuperar la información");
             }
         }
 
         private void cmbService_Type_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdd_to_Workshop_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection conn = DataBaseConnection.DataBase_Open_Connection();
+                SqlCommand command;
+                if (cmbService_Type.Text == "Mantenimiento")
+                {
+                    var request = "Insert into tblCars_in_Maintenance (IdCar) Values (" + lblIdCar.Text +  ")";
+                    command = new SqlCommand(request, conn);
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("Se añadío el vehiculo con exito a mantenimiento");
+
+                }
+                else if (cmbService_Type.Text == "Reparacion")
+                {
+                    var request = "Insert into tblCars_in_Repair";
+                    command = new SqlCommand(request, conn);
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("Se añadío el vehiculo con exito a reparación");
+                }
+                else
+                {
+                    MessageBox.Show("No elecciono el tipo de servicio");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error durante el proceso, verifique e intente de nuevo");
+            }
+           
+        }
+
+        private void label12_Click(object sender, EventArgs e)
         {
 
         }
