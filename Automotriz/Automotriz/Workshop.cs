@@ -96,9 +96,7 @@ namespace Automotriz
             try
             {
                 SqlConnection conn = DataBaseConnection.DataBase_Open_Connection();
-
                 var query_car = "select Car_mark, Car_model from tblCar where Car_carriage_plate = '" + txtCar_Plate + "'";
-
                 SqlCommand command_car = new SqlCommand(query_car, conn);
                 SqlDataReader data_reader = command_car.ExecuteReader();
 
@@ -107,11 +105,11 @@ namespace Automotriz
                     lblCar_Mark.Text = data_reader["Car_mark"].ToString();
                     lblCar_Model.Text = data_reader["Car_model"].ToString();
 
-                   // lblCar_Owner.Text = data_reader["Car_"].ToString();
+                   //lblCar_Owner.Text = data_reader["Car_"].ToString();
                 }
                 else
                 {
-                    MessageBox.Show("No se encontró el ID, favor verificar");
+                    MessageBox.Show("No se encontró la placa, favor verificar");
                     lblCar_Mark.Text = "Not";
                     lblCar_Model.Text = "Not";
                     lblCar_Owner.Text = "Not";
@@ -128,5 +126,9 @@ namespace Automotriz
             }
         }
 
+        private void cmbService_Type_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

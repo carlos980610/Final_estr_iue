@@ -105,6 +105,7 @@
             this.btnAdd_Part.TabIndex = 9;
             this.btnAdd_Part.Text = "Repuestos";
             this.btnAdd_Part.UseVisualStyleBackColor = true;
+            this.btnAdd_Part.Click += new System.EventHandler(this.btnAdd_Part_Click);
             // 
             // Menu_user
             // 
@@ -120,6 +121,7 @@
             this.Controls.Add(this.btnSee_Cars);
             this.Name = "Menu_user";
             this.Text = "Menu_user";
+            this.Load += new System.EventHandler(this.Menu_user_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
