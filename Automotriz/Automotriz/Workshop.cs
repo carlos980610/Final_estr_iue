@@ -84,9 +84,9 @@ namespace Automotriz
                 MessageBox.Show("Error al cargar los datos \nInfo: " + exception);
             }
 
-            total_cars = dgvCars_in_repair.Rows.Count + dgvCars_in_maintenance.Rows.Count;
-            lblTotal_Manteniance_Cars.Text = dgvCars_in_maintenance.Rows.Count.ToString();
-            lblTotal_Repair_Cars.Text = dgvCars_in_repair.Rows.Count.ToString();
+            total_cars = (dgvCars_in_repair.Rows.Count -1)+ (dgvCars_in_maintenance.Rows.Count -1);
+            lblTotal_Manteniance_Cars.Text = (dgvCars_in_maintenance.Rows.Count -1).ToString();
+            lblTotal_Repair_Cars.Text = (dgvCars_in_repair.Rows.Count -1).ToString();
             lblTotal_Cars.Text = total_cars.ToString();
 
 
@@ -156,7 +156,7 @@ namespace Automotriz
                 }
                 else
                 {
-                    MessageBox.Show("No elecciono el tipo de servicio");
+                    MessageBox.Show("No Selecciono el tipo de servicio");
                 }
             }
             catch (Exception)
@@ -167,6 +167,16 @@ namespace Automotriz
         }
 
         private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvCars_in_repair_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtCar_Plate_TextChanged(object sender, EventArgs e)
         {
 
         }

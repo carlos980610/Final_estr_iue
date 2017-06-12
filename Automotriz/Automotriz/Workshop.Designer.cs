@@ -111,6 +111,7 @@
             this.txtCar_Plate.Name = "txtCar_Plate";
             this.txtCar_Plate.Size = new System.Drawing.Size(100, 20);
             this.txtCar_Plate.TabIndex = 5;
+            this.txtCar_Plate.TextChanged += new System.EventHandler(this.txtCar_Plate_TextChanged);
             // 
             // btnExit
             // 
@@ -140,6 +141,7 @@
             this.dgvCars_in_repair.ReadOnly = true;
             this.dgvCars_in_repair.Size = new System.Drawing.Size(892, 193);
             this.dgvCars_in_repair.TabIndex = 10;
+            this.dgvCars_in_repair.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCars_in_repair_CellContentClick);
             // 
             // dgvCars_in_maintenance
             // 
@@ -302,16 +304,16 @@
             this.label9.TabIndex = 27;
             this.label9.Text = "Id:";
             // 
-            // label13
+            // lblIdCar
             // 
             this.lblIdCar.AutoSize = true;
             this.lblIdCar.Location = new System.Drawing.Point(239, 642);
-            this.lblIdCar.Name = "label13";
+            this.lblIdCar.Name = "lblIdCar";
             this.lblIdCar.Size = new System.Drawing.Size(28, 13);
             this.lblIdCar.TabIndex = 28;
             this.lblIdCar.Text = "XXX";
             // 
-            // lblIdCar
+            // Workshop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -343,7 +345,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "lblIdCar";
+            this.Name = "Workshop";
             this.Text = "Workshop";
             this.Load += new System.EventHandler(this.Workshop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCars_in_repair)).EndInit();

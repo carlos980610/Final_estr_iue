@@ -36,11 +36,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lblKilometer = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.clmDataTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmTypeService = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmSpareParts = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvServicio = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.btnOk = new System.Windows.Forms.Button();
             this.lblCarriage = new System.Windows.Forms.Label();
@@ -52,9 +48,11 @@
             this.lblTotalCost = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblEstado_taller = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.label13 = new System.Windows.Forms.Label();
+            this.lblVeces_taller = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvServicio)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -129,41 +127,14 @@
             this.label8.TabIndex = 6;
             this.label8.Text = "Kilometraje:";
             // 
-            // dataGridView1
+            // dgvServicio
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.clmDataTime,
-            this.clmTypeService,
-            this.clmDescription,
-            this.clmSpareParts});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 184);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(556, 150);
-            this.dataGridView1.TabIndex = 8;
-            // 
-            // clmDataTime
-            // 
-            this.clmDataTime.HeaderText = "Fecha";
-            this.clmDataTime.Name = "clmDataTime";
-            this.clmDataTime.Width = 80;
-            // 
-            // clmTypeService
-            // 
-            this.clmTypeService.HeaderText = "Servicio";
-            this.clmTypeService.Name = "clmTypeService";
-            // 
-            // clmDescription
-            // 
-            this.clmDescription.HeaderText = "Descripción";
-            this.clmDescription.Name = "clmDescription";
-            this.clmDescription.Width = 200;
-            // 
-            // clmSpareParts
-            // 
-            this.clmSpareParts.HeaderText = "Repuestos";
-            this.clmSpareParts.Name = "clmSpareParts";
-            this.clmSpareParts.Width = 130;
+            this.dgvServicio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvServicio.Location = new System.Drawing.Point(12, 184);
+            this.dgvServicio.Name = "dgvServicio";
+            this.dgvServicio.Size = new System.Drawing.Size(556, 150);
+            this.dgvServicio.TabIndex = 8;
+            this.dgvServicio.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label2
             // 
@@ -267,14 +238,14 @@
             this.label3.TabIndex = 19;
             this.label3.Text = "$";
             // 
-            // label11
+            // lblEstado_taller
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(141, 168);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(28, 13);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "XXX";
+            this.lblEstado_taller.AutoSize = true;
+            this.lblEstado_taller.Location = new System.Drawing.Point(141, 168);
+            this.lblEstado_taller.Name = "lblEstado_taller";
+            this.lblEstado_taller.Size = new System.Drawing.Size(28, 13);
+            this.lblEstado_taller.TabIndex = 21;
+            this.lblEstado_taller.Text = "XXX";
             // 
             // label12
             // 
@@ -285,12 +256,33 @@
             this.label12.TabIndex = 20;
             this.label12.Text = "Estado actual en el taller:";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(302, 168);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(92, 13);
+            this.label13.TabIndex = 22;
+            this.label13.Text = "Veces en el Taller";
+            // 
+            // lblVeces_taller
+            // 
+            this.lblVeces_taller.AutoSize = true;
+            this.lblVeces_taller.Location = new System.Drawing.Point(400, 168);
+            this.lblVeces_taller.Name = "lblVeces_taller";
+            this.lblVeces_taller.Size = new System.Drawing.Size(28, 13);
+            this.lblVeces_taller.TabIndex = 23;
+            this.lblVeces_taller.Text = "XXX";
+            this.lblVeces_taller.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // Car_life_sheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(580, 385);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.lblVeces_taller);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.lblEstado_taller);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblTotalCost);
@@ -303,7 +295,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvServicio);
             this.Controls.Add(this.lblKilometer);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lblCylinder);
@@ -315,7 +307,7 @@
             this.Name = "Car_life_sheet";
             this.Text = "Hoja de datos del vehiculo";
             this.Load += new System.EventHandler(this.Car_life_sheet_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvServicio)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,7 +323,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblKilometer;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvServicio;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.Label lblCarriage;
@@ -339,15 +331,13 @@
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmDataTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmTypeService;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmDescription;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmSpareParts;
         private System.Windows.Forms.Label lblOwner;
         private System.Windows.Forms.Label lblTotalCost;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblEstado_taller;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblVeces_taller;
     }
 }

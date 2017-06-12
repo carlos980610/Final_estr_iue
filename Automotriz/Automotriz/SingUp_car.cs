@@ -19,7 +19,7 @@ namespace Automotriz
             try
             {
                 SqlConnection connection = DataBaseConnection.DataBase_Open_Connection();
-                var query = "Select IdClient, Car_mark, Client_id_card, Client_phone, Client_address from tblClient where Client_id_card = '" + txtId_Client.Text + "'";
+                var query = "Select IdClient, Client_name, Client_id_card, Client_phone, Client_address from tblClient where Client_id_card = '" + txtId_Client.Text + "'";
                 SqlCommand command = new SqlCommand(query, connection);
                 SqlDataReader data_reader = command.ExecuteReader();
 

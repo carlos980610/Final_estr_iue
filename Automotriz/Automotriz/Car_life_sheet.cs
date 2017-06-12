@@ -49,6 +49,24 @@ namespace Automotriz
 
                 throw;
             }
+            try
+
+            {
+                SqlConnection conn = DataBaseConnection.DataBase_Open_Connection();
+                var query = "select * from tblService where Id_Placa = '" + lblCarriage.Text +"'";
+                SqlCommand command = new SqlCommand(query, conn);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable table_s = new DataTable();
+                adapter.Fill(table_s);
+
+                dgvServicio.DataSource = table_s;
+
+                
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("Error");
+            }
         }
 
 
@@ -67,8 +85,16 @@ namespace Automotriz
             {
                 MessageBox.Show("No se recuperó el nombre del cliente, verifique e intentelo de nuevo de ser necesario");
             }
+            lblVeces_taller.Text = (dgvServicio.RowCount - 1 ).ToString();
+            
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
         private void btnOk_Click(object sender, EventArgs e)
         {
             Close();
