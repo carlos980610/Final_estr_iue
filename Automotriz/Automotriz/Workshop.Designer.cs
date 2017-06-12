@@ -156,6 +156,7 @@
             this.cmbService_Type.Name = "cmbService_Type";
             this.cmbService_Type.Size = new System.Drawing.Size(121, 21);
             this.cmbService_Type.TabIndex = 12;
+            this.cmbService_Type.SelectedIndexChanged += new System.EventHandler(this.cmbService_Type_SelectedIndexChanged);
             // 
             // label5
             // 
