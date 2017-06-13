@@ -43,5 +43,35 @@ namespace Automotriz
         {
             Close();
         }
+
+        private void btnAddPart_Click(object sender, EventArgs e)
+        {
+            try
+            {
+             SqlConnection conn = DataBaseConnection.DataBase_Open_Connection();
+             SqlCommand command;
+                var request = "insert into tblPart (Part_name, Part_price) values ('"+ txtName_R.Text+"','"+txtPrecio_R.Text +"')";
+                command = new SqlCommand(request, conn);
+                command.ExecuteNonQuery();
+                MessageBox.Show("Se añadío con exito la parte");
+               
+
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("No se Añadio");
+            }
+            txtName_R.Text = "";
+            txtPrecio_R.Text = "";
+            BringToFront();
+        }
+
+        private void btnSync_Click(object sender, EventArgs e)
+        {
+            Close();
+            Part_add new_Form = new Part_add();
+            new_Form.Show();
+            BringToFront();
+        }
     }
 }
