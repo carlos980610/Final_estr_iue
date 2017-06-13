@@ -48,10 +48,10 @@
             this.lblTotalCost = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lblEstado_taller = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.lblVeces_taller = new System.Windows.Forms.Label();
+            this.pgbEstatus = new System.Windows.Forms.ProgressBar();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicio)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,9 +130,9 @@
             // dgvServicio
             // 
             this.dgvServicio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvServicio.Location = new System.Drawing.Point(12, 184);
+            this.dgvServicio.Location = new System.Drawing.Point(12, 190);
             this.dgvServicio.Name = "dgvServicio";
-            this.dgvServicio.Size = new System.Drawing.Size(556, 150);
+            this.dgvServicio.Size = new System.Drawing.Size(556, 144);
             this.dgvServicio.TabIndex = 8;
             this.dgvServicio.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -238,32 +238,14 @@
             this.label3.TabIndex = 19;
             this.label3.Text = "$";
             // 
-            // lblEstado_taller
-            // 
-            this.lblEstado_taller.AutoSize = true;
-            this.lblEstado_taller.Location = new System.Drawing.Point(141, 168);
-            this.lblEstado_taller.Name = "lblEstado_taller";
-            this.lblEstado_taller.Size = new System.Drawing.Size(28, 13);
-            this.lblEstado_taller.TabIndex = 21;
-            this.lblEstado_taller.Text = "XXX";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(9, 168);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(126, 13);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "Estado actual en el taller:";
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(302, 168);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(92, 13);
+            this.label13.Size = new System.Drawing.Size(95, 13);
             this.label13.TabIndex = 22;
-            this.label13.Text = "Veces en el Taller";
+            this.label13.Text = "Veces en el Taller:";
             // 
             // lblVeces_taller
             // 
@@ -275,15 +257,31 @@
             this.lblVeces_taller.Text = "XXX";
             this.lblVeces_taller.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // pgbEstatus
+            // 
+            this.pgbEstatus.Location = new System.Drawing.Point(119, 161);
+            this.pgbEstatus.Name = "pgbEstatus";
+            this.pgbEstatus.Size = new System.Drawing.Size(144, 23);
+            this.pgbEstatus.TabIndex = 24;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(10, 164);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(103, 13);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "Progreso en el taller:";
+            // 
             // Car_life_sheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(580, 385);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.pgbEstatus);
             this.Controls.Add(this.lblVeces_taller);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.lblEstado_taller);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblTotalCost);
             this.Controls.Add(this.label10);
@@ -335,9 +333,9 @@
         private System.Windows.Forms.Label lblTotalCost;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblEstado_taller;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label lblVeces_taller;
+        private System.Windows.Forms.ProgressBar pgbEstatus;
+        private System.Windows.Forms.Label label11;
     }
 }

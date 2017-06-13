@@ -10,10 +10,9 @@ namespace Automotriz
     class SendClass
     {
         string Id; // Id que lleva
-
-       public SendClass()
+        public SendClass()
         {
-
+    
         }
         public void GetterId(string id)
         {

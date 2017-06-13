@@ -13,12 +13,19 @@ namespace Automotriz
 {
     public partial class Car_life_sheet : Form
     {
-        string car_plate = "", id_owner = "";
+        string car_plate = "", id_owner = "", service_type = "";
+        int suma;
         public Car_life_sheet(string plate, string ced)
         {
             InitializeComponent();
             car_plate = plate;
             id_owner = ced;
+
+            pgbEstatus.Maximum = 100;  //Define el valor maximo que puede contener la barra
+            pgbEstatus.Minimum = 0;
+
+            pgbEstatus.Step = 10;
+            pgbEstatus.PerformStep();
 
             try
             {
@@ -43,6 +50,8 @@ namespace Automotriz
                     Close();
 
                 }
+
+               
             }
             catch (Exception exception)
             {
@@ -61,12 +70,25 @@ namespace Automotriz
 
                 dgvServicio.DataSource = table_s;
 
-                
+
+              //  service_type = dgvServicio.
             }
             catch (Exception exception)
             {
                 MessageBox.Show("Error");
             }
+
+/*
+            try
+            {
+                query = "select Porcent";
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }*/
+
         }
 
 
@@ -86,7 +108,12 @@ namespace Automotriz
                 MessageBox.Show("No se recuperó el nombre del cliente, verifique e intentelo de nuevo de ser necesario");
             }
             lblVeces_taller.Text = (dgvServicio.RowCount - 1 ).ToString();
-            
+
+            for (int i = 0; i < dgvServicio.RowCount - 1; i++)
+            {
+                suma = Convert.ToInt32(dgvServicio.Rows[i].Cells[4].Value);
+            }
+            lblTotalCost.Text = suma.ToString();
 
         }
 
