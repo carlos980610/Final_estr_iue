@@ -31,8 +31,8 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtName_R = new System.Windows.Forms.TextBox();
+            this.txtPrecio_R = new System.Windows.Forms.TextBox();
             this.btnAddPart = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.lblIdPart = new System.Windows.Forms.Label();
@@ -71,19 +71,19 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Precio del repuesto:";
             // 
-            // textBox1
+            // txtName_R
             // 
-            this.textBox1.Location = new System.Drawing.Point(131, 238);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtName_R.Location = new System.Drawing.Point(131, 238);
+            this.txtName_R.Name = "txtName_R";
+            this.txtName_R.Size = new System.Drawing.Size(100, 20);
+            this.txtName_R.TabIndex = 4;
             // 
-            // textBox2
+            // txtPrecio_R
             // 
-            this.textBox2.Location = new System.Drawing.Point(131, 267);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtPrecio_R.Location = new System.Drawing.Point(131, 267);
+            this.txtPrecio_R.Name = "txtPrecio_R";
+            this.txtPrecio_R.Size = new System.Drawing.Size(100, 20);
+            this.txtPrecio_R.TabIndex = 5;
             // 
             // btnAddPart
             // 
@@ -93,6 +93,7 @@
             this.btnAddPart.TabIndex = 6;
             this.btnAddPart.Text = "Añadir repuesto";
             this.btnAddPart.UseVisualStyleBackColor = true;
+            this.btnAddPart.Click += new System.EventHandler(this.btnAddPart_Click);
             // 
             // label3
             // 
@@ -148,6 +149,7 @@
             this.btnSync.TabIndex = 12;
             this.btnSync.Text = "Actualizar";
             this.btnSync.UseVisualStyleBackColor = true;
+            this.btnSync.Click += new System.EventHandler(this.btnSync_Click);
             // 
             // Part_add
             // 
@@ -161,8 +163,8 @@
             this.Controls.Add(this.lblIdPart);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnAddPart);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPrecio_R);
+            this.Controls.Add(this.txtName_R);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnExit);
@@ -180,8 +182,8 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtName_R;
+        private System.Windows.Forms.TextBox txtPrecio_R;
         private System.Windows.Forms.Button btnAddPart;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblIdPart;
