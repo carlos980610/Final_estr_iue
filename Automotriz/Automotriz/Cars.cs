@@ -70,7 +70,7 @@ namespace Automotriz
             var clickedMenuItem = sender as MenuItem;
             var menuText = clickedMenuItem.Text;
             switch (menuText)
-            {
+            {     
                 case "Enviar al taller":
                     Workshop_status new_form = new Workshop_status();
                     new_form.ShowDialog();
