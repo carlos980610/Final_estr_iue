@@ -96,7 +96,7 @@ namespace Automotriz
             try
             {
                 SqlConnection conn = DataBaseConnection.DataBase_Open_Connection();
-                var query_car = "select Id_Car, Car_mark, Car_model from tblCar where Car_carriage_plate = '" + txtCar_Plate + "'";
+                var query_car = "select Id_Car, Car_mark, Car_model from tblCar where Car_carriage_plate = '" + txtCar_Plate.Text + "'";
                 SqlCommand command_car = new SqlCommand(query_car, conn);
                 SqlDataReader data_reader = command_car.ExecuteReader();
 
