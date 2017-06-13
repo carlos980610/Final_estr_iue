@@ -61,11 +61,17 @@ namespace Automotriz
             {
                 MessageBox.Show("No se Añadio");
             }
+            txtName_R.Text = "";
+            txtPrecio_R.Text = "";
+            BringToFront();
         }
 
         private void btnSync_Click(object sender, EventArgs e)
         {
-            Application.Restart();
+            Close();
+            Part_add new_Form = new Part_add();
+            new_Form.Show();
+            BringToFront();
         }
     }
 }
