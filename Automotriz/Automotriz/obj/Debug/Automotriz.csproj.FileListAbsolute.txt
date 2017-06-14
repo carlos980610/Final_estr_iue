@@ -69,7 +69,6 @@ C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\
 C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.SingUp_car.resources
 C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.SingUp_client.resources
 C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Workshop.resources
-C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Workshop_status.resources
 C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.csproj.GenerateResource.Cache
 C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.exe
 C:\Users\JuanJo\Documents\GitHub\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.pdb
