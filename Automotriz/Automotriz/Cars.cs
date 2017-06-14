@@ -50,6 +50,7 @@ namespace Automotriz
 
         private void dgvCars_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
+            /*
             if (e.Button == MouseButtons.Right)
             {
                 ContextMenu context_menu_for_cars = new ContextMenu();
@@ -63,21 +64,23 @@ namespace Automotriz
                 context_menu_for_cars.Show(dgvCars, new Point(e.X, e.Y));
 
             }
+            */
         }
 
         private void MenuItems_Click(object sender, EventArgs e)
         {
+            /*
             var clickedMenuItem = sender as MenuItem;
             var menuText = clickedMenuItem.Text;
             switch (menuText)
             {     
                 case "Enviar al taller":
-                    Workshop_status new_form = new Workshop_status();
-                    new_form.ShowDialog();
+                    
                     break;
                 default:
                     break;
             }
+            */
         }
     }
 }

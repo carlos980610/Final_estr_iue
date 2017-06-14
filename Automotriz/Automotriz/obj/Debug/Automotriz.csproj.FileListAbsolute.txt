@@ -49,7 +49,6 @@ D:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estr_iue\Auto
 D:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.SingUp_car.resources
 D:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.SingUp_client.resources
 D:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Workshop.resources
-D:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.Workshop_status.resources
 D:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.csproj.GenerateResource.Cache
 D:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.exe
 D:\Users\CarlosAndrés\Documents\Visual Studio 2017\Projects\Final_estr_iue\Automotriz\Automotriz\obj\Debug\Automotriz.pdb

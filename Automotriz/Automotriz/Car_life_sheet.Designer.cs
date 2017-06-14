@@ -52,6 +52,7 @@
             this.lblVeces_taller = new System.Windows.Forms.Label();
             this.pgbEstatus = new System.Windows.Forms.ProgressBar();
             this.label11 = new System.Windows.Forms.Label();
+            this.lblPorcent = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicio)).BeginInit();
             this.SuspendLayout();
             // 
@@ -273,11 +274,21 @@
             this.label11.TabIndex = 25;
             this.label11.Text = "Progreso en el taller:";
             // 
+            // lblPorcent
+            // 
+            this.lblPorcent.AutoSize = true;
+            this.lblPorcent.Location = new System.Drawing.Point(174, 164);
+            this.lblPorcent.Name = "lblPorcent";
+            this.lblPorcent.Size = new System.Drawing.Size(21, 13);
+            this.lblPorcent.TabIndex = 26;
+            this.lblPorcent.Text = "0%";
+            // 
             // Car_life_sheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(580, 385);
+            this.Controls.Add(this.lblPorcent);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.pgbEstatus);
             this.Controls.Add(this.lblVeces_taller);
@@ -337,5 +348,6 @@
         private System.Windows.Forms.Label lblVeces_taller;
         private System.Windows.Forms.ProgressBar pgbEstatus;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblPorcent;
     }
 }

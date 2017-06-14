@@ -111,7 +111,6 @@
             this.txtCar_Plate.Name = "txtCar_Plate";
             this.txtCar_Plate.Size = new System.Drawing.Size(100, 20);
             this.txtCar_Plate.TabIndex = 5;
-            this.txtCar_Plate.TextChanged += new System.EventHandler(this.txtCar_Plate_TextChanged);
             // 
             // btnExit
             // 
@@ -141,7 +140,6 @@
             this.dgvCars_in_repair.ReadOnly = true;
             this.dgvCars_in_repair.Size = new System.Drawing.Size(892, 193);
             this.dgvCars_in_repair.TabIndex = 10;
-            this.dgvCars_in_repair.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCars_in_repair_CellContentClick);
             // 
             // dgvCars_in_maintenance
             // 
@@ -257,7 +255,6 @@
             this.label12.Size = new System.Drawing.Size(57, 13);
             this.label12.TabIndex = 21;
             this.label12.Text = "Propietario";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // lblTotal_Manteniance_Cars
             // 

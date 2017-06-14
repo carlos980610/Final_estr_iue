@@ -96,17 +96,16 @@ namespace Automotriz
             try
             {
                 SqlConnection conn = DataBaseConnection.DataBase_Open_Connection();
-                var query_car = "select Id_Car, Car_mark, Car_model from tblCar where Car_carriage_plate = '" + txtCar_Plate.Text + "'";
+                var query_car = "select Id_Car, Car_mark, Car_model, Car_owner_id from tblCar where Car_carriage_plate = '" + txtCar_Plate.Text + "'";
                 SqlCommand command_car = new SqlCommand(query_car, conn);
                 SqlDataReader data_reader = command_car.ExecuteReader();
 
                 if (data_reader.Read())
                 {
-                    lblCar_Mark.Text = data_reader["Car_mark"].ToString();
-                    lblCar_Model.Text = data_reader["Car_model"].ToString();
-                    lblIdCar.Text = data_reader["IdCar"].ToString();
-
-                    //lblCar_Owner.Text = data_reader["Car_wner_id"].ToString();
+                    lblIdCar.Text = data_reader[0].ToString();
+                    lblCar_Mark.Text = data_reader[1].ToString();
+                    lblCar_Model.Text = data_reader[2].ToString();
+                    lblCar_Owner.Text = data_reader["Car_owner_id"].ToString();
                 }
                 else
                 {
@@ -116,11 +115,9 @@ namespace Automotriz
                     lblCar_Owner.Text = "Not";
                     lblIdCar.Text = "Not";
                     txtCar_Plate.Text = "";
-
                 }
 
                 DataBaseConnection.DataBase_Close_Connection(conn);
-
             }
             catch (Exception exception)
             {
@@ -130,7 +127,7 @@ namespace Automotriz
 
         private void cmbService_Type_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            btnAdd_to_Workshop.Enabled = true;
         }
 
         private void btnAdd_to_Workshop_Click(object sender, EventArgs e)
@@ -141,18 +138,33 @@ namespace Automotriz
                 SqlCommand command;
                 if (cmbService_Type.Text == "Mantenimiento")
                 {
-                    var request = "Insert into tblCars_in_Maintenance (IdCar) Values (" + lblIdCar.Text +  ")";
-                    command = new SqlCommand(request, conn);
-                    command.ExecuteNonQuery();
-                    MessageBox.Show("Se añadío el vehiculo con exito a mantenimiento");
+                    try
+                    {
+                        var request = "Insert into tblCars_in_Maintenance (IdCar, Porcent) Values ('" + lblIdCar.Text +  "','" + 0 + "')";
+                        command = new SqlCommand(request, conn);
+                        command.ExecuteNonQuery();
+                        MessageBox.Show("Se añadío el vehiculo con exito a mantenimiento");
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Es posible que el vehiculo ya este registrado en el taller para mantenimiento");
+                    }
 
                 }
                 else if (cmbService_Type.Text == "Reparacion")
                 {
-                    var request = "Insert into tblCars_in_Repair";
-                    command = new SqlCommand(request, conn);
-                    command.ExecuteNonQuery();
-                    MessageBox.Show("Se añadío el vehiculo con exito a reparación");
+                    try
+                    {
+                        var request = "Insert into tblCars_in_Repair (IdCar, Porcent) Values ('" + lblIdCar.Text + "','" + 0 + "')";
+                        command = new SqlCommand(request, conn);
+                        command.ExecuteNonQuery();
+                        MessageBox.Show("Se añadío el vehiculo con exito a reparación");
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Es posible que el vehiculo ya este registrado en el taller para mantenimiento");
+                    }
+
                 }
                 else
                 {
@@ -162,23 +174,7 @@ namespace Automotriz
             catch (Exception)
             {
                 MessageBox.Show("Error durante el proceso, verifique e intente de nuevo");
-            }
-           
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvCars_in_repair_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void txtCar_Plate_TextChanged(object sender, EventArgs e)
-        {
-
+            } 
         }
     }
 }

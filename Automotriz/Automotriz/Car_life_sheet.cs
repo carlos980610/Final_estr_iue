@@ -21,11 +21,8 @@ namespace Automotriz
             car_plate = plate;
             id_owner = ced;
 
-            pgbEstatus.Maximum = 100;  //Define el valor maximo que puede contener la barra
-            pgbEstatus.Minimum = 0;
-
-            pgbEstatus.Step = 10;
-            pgbEstatus.PerformStep();
+            pgbEstatus.Maximum = 100;   //Define el valor maximo que puede contener la barra
+            pgbEstatus.Minimum = 0;     //Define el valor minimo que puede contener la barra
 
             try
             {
@@ -50,8 +47,6 @@ namespace Automotriz
                     Close();
 
                 }
-
-               
             }
             catch (Exception exception)
             {
@@ -62,7 +57,7 @@ namespace Automotriz
 
             {
                 SqlConnection conn = DataBaseConnection.DataBase_Open_Connection();
-                var query = "select * from tblService where Id_Placa = '" + lblCarriage.Text +"'";
+                var query = "select * from tblService where Id_Placa = '" + lblCarriage.Text + "'";
                 SqlCommand command = new SqlCommand(query, conn);
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 DataTable table_s = new DataTable();
@@ -70,24 +65,72 @@ namespace Automotriz
 
                 dgvServicio.DataSource = table_s;
 
-
-              //  service_type = dgvServicio.
+                service_type = dgvServicio.Rows[0].Cells[2].Value.ToString();
+                service_type = service_type.Trim();
+                MessageBox.Show(service_type);
             }
             catch (Exception exception)
             {
                 MessageBox.Show("Error");
             }
 
-/*
-            try
-            {
-                query = "select Porcent";
-            }
-            catch (Exception)
-            {
 
-                throw;
-            }*/
+
+            if (service_type == "Mantenimiento")
+            {
+                try
+                {
+                    SqlConnection conn = DataBaseConnection.DataBase_Open_Connection();
+                    var query = "select Porcent from tblCars_in_Maintenance";
+                    SqlCommand command = new SqlCommand(query, conn);
+                    SqlDataReader data_reader = command.ExecuteReader();
+
+                    if (data_reader.Read())
+                    {
+                        pgbEstatus.Step = Convert.ToInt32(data_reader["Porcent"].ToString());
+                        pgbEstatus.PerformStep();
+                        lblPorcent.Text = data_reader["Porcent"].ToString() + "%";
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se logró cargar el porcentaje del vehiculo en el taller");
+                    }
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+            }
+            else if (service_type == "Reparación")
+            {
+                try
+                {
+                    SqlConnection conn = DataBaseConnection.DataBase_Open_Connection();
+                    var query = "select Porcent from tblCars_in_Repair";
+                    SqlCommand command = new SqlCommand(query, conn);
+                    SqlDataReader data_reader = command.ExecuteReader();
+
+                    if (data_reader.Read())
+                    {
+                        pgbEstatus.Step = Convert.ToInt32(data_reader["Porcent"].ToString());
+                        pgbEstatus.PerformStep();
+                        lblPorcent.Text = data_reader["Porcent"].ToString() + "%";
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se logró cargar el porcentaje del vehiculo en el taller");
+                    }
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Fatal error, no existe porcentaje de avance en el vehiculo, comuniquese con el taller");
+            }
+
 
         }
 
